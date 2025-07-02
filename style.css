@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This is for basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 40px;
+  background-color: #f4f4f4;
+  color: white;
+}
+
+header,
+nav {
+  background-color: rgb(102, 51, 153);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  /* this is for removing bullet points - splash page assignment */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+p {
+  display: flex;
+  justify-content: baseline;
+}
+
+aside {
+  background-color: rgb(105, 105, 105);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Image gallery using flexbox and wrapping */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.image-item {
+  flex: 1 1 calc(33% - 1rem);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+  text-align: end;
+  padding: 1px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.content {
+  background-color: rgb(255, 204, 0);
+  color: rgb(57, 56, 56);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: #222;
+  color: rgb(105, 105, 105);
+}
+
+/* ------------------------Responsive layout----------1 1 calc(50% - 1rem)---------------------- */
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .image-item {
+    flex: 1fr 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .image-item {
+    flex: 1fr 1fr;
+  }
+}
