@@ -9,20 +9,21 @@
   <!-- -------------------------------------------- -->
   <body>
     <header>
-      <h1><strong>FacilitatorLab</strong></h1>
+      <img src="./Facilitator lab horiz@3x.png" alt="FacilitatorLab logo" id="home">
+     
     </header>
     <!-- --------------------hor to actually link the sessions?------------------------------ -->
     <nav>
       <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Mission">About Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#mission">About Us</a></li>
         <li><a href="#articles">Articles</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <!-- ----------------------------------------------------- -->
     <div class="container">
-      <aside>
+      <aside id="mission">
         <h2>Our Mission</h2>
             <p>
               To empower organizations and individuals by facilitating
@@ -31,7 +32,7 @@
             </p>
             <h2>Our Vision</h2>
             <p>
-              Our Vision: To be the leading partner in transforming meeting
+              To be the leading partner in transforming meeting
               dynamics, enabling every organization to achieve its full
               potential through collaborative and impactful interactions
             </p>
@@ -100,10 +101,9 @@ Instead, facilitators ask clarifying questions. They summarise and mirror. They 
 “Just to double-check: who’s doing what by when?”
 These simple techniques help translate vague enthusiasm into shared accountability. And you don’t have to be holding a whiteboard marker to use them. They work just as well in emails, project briefs, and team huddles.</p>
 <p><h1>Reframing the Closing Line</h1>
-
 If people are most likely to remember how you begin and how you end, then let’s make those moments count. Open with presence. Close with purpose. Be human, yes—but let your message breathe.
 So, the next time you feel the pull to over-apologise for a request or sugarcoat your feedback, pause, and ask yourself:
-<h1>Am I being kind, or just trying not to be uncomfortable?</h1>
+<h3>Am I being kind, or just trying not to be uncomfortable?</h3>
 Because the true art of communication is not in sounding good. It’s in being understood—without losing the grace that makes us worth listening to in the first place.</p>
 
           </section>
@@ -132,7 +132,15 @@ Because the true art of communication is not in sounding good. It’s in being u
     </div>
     <!-- ------------------------------------------------------ -->
     <footer>
-      <p>Marilab, 2025 marina@facilitatorlab.net</p>
+      <p id="contact">Marilab, 2025 marina@facilitatorlab.net</p>
+      <p>Sign up to our newsletter!</p>
+      <form class="formShape">
+  <p><label for="fname">Prefered name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">E-mail:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+</p>
     </footer>
   </body>
 </html>
